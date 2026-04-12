@@ -246,33 +246,8 @@
       </div>
     </div>
 
-    <h3 style="margin-top: 36px;">Messaging Approach: Universal with Mid-Sequence Branching</h3>
-    <p>We do not know which FA system any of these institutions is currently running. The WSCUC directory does not contain that information, and the existing HubSpot data is not being used. Rather than guessing, we use a single universal sequence that works regardless of the contact's current system, then branch based on what BDRs learn through calls and replies.</p>
-
-    <div class="branch-diagram">
-      <div class="branch-top">
-        <div class="node">Universal Sequence: Emails 1-4</div>
-      </div>
-      <div class="branch-connector">↓</div>
-      <div class="branch-trigger">
-        <div class="trigger-node">BDR learns current FA system via call or reply (Day 5-14)</div>
-      </div>
-      <div class="branch-connector">↓</div>
-      <div class="branch-cols">
-        <div class="branch-col">
-          <span class="branch-label">Branch A</span>
-          <h3>Current Vendor Users</h3>
-          <p>Emails 5-7 shift to vendor readiness framing. "Has your current system been updated for all nine requirements? It is worth confirming before July 1." No vendor named. Doubt planted without confrontation.</p>
-        </div>
-        <div class="branch-col">
-          <span class="branch-label">Branch B</span>
-          <h3>Manual or No Dedicated System</h3>
-          <p>Emails 5-7 shift to operational burden framing. Nine simultaneous calculation changes managed manually by staff already at capacity. Automation as the relief, not a replacement conversation.</p>
-        </div>
-      </div>
-    </div>
-
-    <p style="font-size: 13.5px; color: var(--muted); margin-top: 4px;">If a BDR does not learn the system by Day 14, contacts stay on the universal track through Email 7. The universal message is strong enough to convert without segmentation.</p>
+    <h3 style="margin-top: 36px;">Messaging Approach: Single Linear Sequence</h3>
+    <p>All 749 contacts receive the same 7-email sequence. The WSCUC directory contains no FA system data, so there is no reliable segmentation trigger. The universal message, "is your system ready for OBBBA?", works for every institution regardless of what they are running. Any system intel gathered through calls and replies goes directly to the BDR for use in the intro conversation.</p>
   </div>
 
   <!-- HOW -->
@@ -284,64 +259,61 @@
       <div class="sequence">
         <div class="seq-step">
           <div class="seq-dot email">E1</div>
-          <div class="seq-label"><span class="day">Day 0</span>Post-conf hook</div>
+          <div class="seq-label"><span class="day">Day 1</span>ARC context</div>
         </div>
         <div class="seq-step">
           <div class="seq-dot linkedin">in</div>
-          <div class="seq-label"><span class="day">Day 1</span>Connect</div>
+          <div class="seq-label"><span class="day">Day 2</span>Connect</div>
         </div>
         <div class="seq-step">
           <div class="seq-dot email">E2</div>
-          <div class="seq-label"><span class="day">Day 3</span>9 requirements</div>
-        </div>
-        <div class="seq-step">
-          <div class="seq-dot call">C1</div>
-          <div class="seq-label"><span class="day">Day 5</span>Call attempt</div>
+          <div class="seq-label"><span class="day">Day 4</span>Proration</div>
         </div>
         <div class="seq-step">
           <div class="seq-dot email">E3</div>
-          <div class="seq-label"><span class="day">Day 7</span>Compliance risk</div>
+          <div class="seq-label"><span class="day">Day 8</span>Grandfathering</div>
+        </div>
+        <div class="seq-step">
+          <div class="seq-dot call">C1</div>
+          <div class="seq-label"><span class="day">Day 9</span>Call attempt</div>
+        </div>
+        <div class="seq-step">
+          <div class="seq-dot email">E4</div>
+          <div class="seq-label"><span class="day">Day 11</span>Vendor check</div>
         </div>
         <div class="seq-step">
           <div class="seq-dot linkedin">in</div>
-          <div class="seq-label"><span class="day">Day 9</span>LI message</div>
-        </div>
-        <div class="seq-step" style="position:relative;">
-          <div class="seq-dot email" style="position:relative;">E4
-            <div class="seq-branch-marker">B</div>
-          </div>
-          <div class="seq-label"><span class="day">Day 11</span>Branch starts</div>
+          <div class="seq-label"><span class="day">Day 12</span>LI message</div>
         </div>
         <div class="seq-step">
           <div class="seq-dot call">C2</div>
-          <div class="seq-label"><span class="day">Day 14</span>Call attempt</div>
+          <div class="seq-label"><span class="day">Day 12</span>Call attempt</div>
         </div>
         <div class="seq-step">
           <div class="seq-dot email">E5</div>
-          <div class="seq-label"><span class="day">Day 16</span>Segmented</div>
+          <div class="seq-label"><span class="day">Day 14</span>Credibility</div>
         </div>
         <div class="seq-step">
           <div class="seq-dot email">E6</div>
-          <div class="seq-label"><span class="day">Day 22</span>Countdown</div>
+          <div class="seq-label"><span class="day">Day 17</span>Urgency</div>
         </div>
         <div class="seq-step">
           <div class="seq-dot email">E7</div>
-          <div class="seq-label"><span class="day">Day 30</span>Final close</div>
+          <div class="seq-label"><span class="day">Day 21</span>Final close</div>
         </div>
       </div>
     </div>
     <p style="font-size: 12.5px; color: var(--muted); margin-top: 4px;">
       <span style="display:inline-block; width:10px; height:10px; background:var(--obsidian); border-radius:50%; vertical-align:middle; margin-right:3px;"></span> Email &nbsp;
       <span style="display:inline-block; width:10px; height:10px; background:#0a66c2; border-radius:50%; vertical-align:middle; margin-right:3px;"></span> LinkedIn &nbsp;
-      <span style="display:inline-block; width:10px; height:10px; background:var(--terracotta); border-radius:50%; vertical-align:middle; margin-right:3px;"></span> Call &nbsp;
-      <span style="display:inline-block; background:var(--terracotta); color:#fff; font-size:9px; font-weight:700; width:14px; height:14px; border-radius:50%; vertical-align:middle; text-align:center; line-height:14px; margin-right:3px;">B</span> Branch trigger point
+      <span style="display:inline-block; width:10px; height:10px; background:var(--terracotta); border-radius:50%; vertical-align:middle; margin-right:3px;"></span> Call
     </p>
 
     <div class="three-col" style="margin-top: 32px;">
       <div class="channel-card">
         <span class="ch-label">Email</span>
         <h3>Primary Outbound</h3>
-        <p>7 touches over 30 days, built in HubSpot, assigned to BDRs. Personalized with school name. Emails 1-4 are universal. Emails 5-7 branch based on system intel gathered in calls. OBBBA Resource Hub as early CTA, FA landing page mid-to-late sequence.</p>
+        <p>7 emails over 21 days, built in HubSpot, assigned to BDRs. Personalized with school name and sender calendar link. Resource hub as early CTA. Managed services credibility and FA CORE intro in the back half.</p>
       </div>
       <div class="channel-card">
         <span class="ch-label">LinkedIn</span>
@@ -352,7 +324,7 @@
       <div class="channel-card">
         <span class="ch-label">Calls</span>
         <h3>Direct Outreach</h3>
-        <p>Two call attempts at Day 5 and Day 14 using direct numbers from WSCUC institution pages. Voicemail on first unanswered attempt only. Primary goal of Day 5 call: learn the current FA system to trigger the right sequence branch.</p>
+        <p>Two call attempts at Day 9 and Day 12 using direct numbers from WSCUC institution pages. Voicemail on first unanswered attempt only. Goal: connect with a decision-maker and move toward a Portico FA CORE walkthrough.</p>
       </div>
     </div>
 
@@ -392,7 +364,7 @@
         <div class="rationale-num">02</div>
         <div class="rationale-content">
           <h3>Universal message because we do not have system data</h3>
-          <p>The WSCUC directory contains no information about which FA system each institution uses. Building two pre-segmented sequences without that data would mean guessing, which produces inconsistent and sometimes wrong messaging. A universal sequence that asks "is your system ready?" works for every institution regardless of what they are running, and surfaces the right information naturally through calls and replies for mid-sequence branching.</p>
+          <p>The WSCUC directory contains no information about which FA system each institution uses. A single linear sequence that asks "is your system ready for OBBBA?" works for every institution regardless of what they are running. The message is strong enough to convert without segmentation, and any system intel gathered through calls and replies goes directly to the BDR for the intro conversation.</p>
         </div>
       </div>
 
@@ -407,8 +379,8 @@
       <div class="rationale-item">
         <div class="rationale-num">04</div>
         <div class="rationale-content">
-          <h3>Calls at Days 5 and 14 serve two purposes</h3>
-          <p>The Day 5 call is not primarily a conversion attempt: it is an intelligence-gathering step. Learning what FA system the institution runs allows the BDR to move the contact into the right branch for Emails 5-7. The Day 14 call is a direct follow-up for contacts who have not replied across four touches. Together, they surface the highest-intent contacts and provide the segmentation data the sequence needs to sharpen in its second half.</p>
+          <h3>Calls at Days 9 and 12 as direct outreach</h3>
+          <p>The Day 9 call surfaces contacts who have seen the first two emails but have not replied. The Day 12 call follows up on contacts who have not responded across four email touches. Together, they give the BDR two live opportunities to move a contact toward an FA CORE intro before the back half of the sequence pushes harder toward the calendar.</p>
         </div>
       </div>
 
@@ -488,8 +460,8 @@
       <thead><tr><th>Asset</th><th>Notes</th><th>When</th></tr></thead>
       <tbody>
         <tr><td><strong>WSCUC directory scrape</strong></td><td>217 institution pages scraped. 749 US contacts extracted across President/CEO, CAO, CFO, and ALO roles. Formatted for HubSpot import. This is the only contact source for the campaign.</td><td class="tc-hi">Complete</td></tr>
-        <tr><td><strong>Email 1-4 copy (universal)</strong></td><td>Single version, works for all contacts regardless of FA system. Executive-level framing: institutional compliance risk, not operational detail.</td><td class="tc-hi">Today / Weekend</td></tr>
-        <tr><td><strong>Email 5-7 copy (2 branch variants)</strong></td><td>Branch A (vendor users): system readiness doubt. Branch B (manual/other): operational risk. BDRs move contacts to the right branch after Day 5 call.</td><td class="tc-hi">Weekend</td></tr>
+        <tr><td><strong>Email 1-4 copy</strong></td><td>Single version, works for all contacts regardless of FA system. Student outcome framing: aid eligibility, grandfathering, Grad PLUS elimination.</td><td class="tc-hi">Complete</td></tr>
+        <tr><td><strong>Email 5-7 copy</strong></td><td>Single linear track. Emails 5-7 escalate from managed services credibility to calendar CTA to final close.</td><td class="tc-hi">Complete</td></tr>
         <tr><td><strong>LinkedIn ad creative (2-3 variants)</strong></td><td>Single image. OB3 compliance headline for executive audience. FA landing page as destination.</td><td class="tc-hi">Weekend</td></tr>
       </tbody>
     </table>
@@ -498,8 +470,7 @@
     <table>
       <thead><tr><th>Item</th><th>Detail</th></tr></thead>
       <tbody>
-        <tr><td><strong>1 primary sequence</strong></td><td>Universal track: 7 emails + call tasks at Day 5 and Day 14 + LinkedIn tasks at Day 1 and Day 9. 30 days.</td></tr>
-        <tr><td><strong>2 branch sequences</strong></td><td>Branch A (vendor users) and Branch B (manual/other). Emails 5-7 only. BDRs manually move contacts after system intel is gathered.</td></tr>
+        <tr><td><strong>1 sequence</strong></td><td>Linear track: 7 emails + call tasks at Day 9 and Day 12 + LinkedIn tasks at Day 2 and Day 12. 21 days.</td></tr>
         <tr><td><strong>2 lists</strong></td><td>WASC-Accredited (directory import) and a suppression list if current customer filtering becomes available later.</td></tr>
         <tr><td><strong>2 contact properties</strong></td><td>WASC Member (y/n), Current FA System (populated by BDR after call).</td></tr>
       </tbody>
